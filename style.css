@@ -1,0 +1,26 @@
+body {
+    background-color: darkgreen;
+}
+
+header,
+.intro,
+.info-container,
+.action,
+.action-container {
+    display: flex;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.intro img {
+    width: 400px;
+    height: auto;
+}
+
+.info-container img {
+    width: 200px;
+    height: auto;
+}
