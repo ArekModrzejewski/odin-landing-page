@@ -1,22 +1,55 @@
 body {
-    background-color: #53E65F;
+    background-color: #DB8048;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
 }
 
 header,
 .intro,
 .info-container,
 .action,
-.action-container {
+.action-container,
+.logo-container {
     display: flex;
+}
+header,
+.action,
+.footer {
+    padding: 0 10vw;
+}
+header {
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-container {
+    gap: 20px;
+    font-size: 36px;
+    align-items: center;
 }
 
 .logo {
-    width: 100px;
-    height: auto;
+    width: 80px;
+    height: 80px;
 }
-
+.logo-h1 {
+    font-size: 36px;
+}
+.links  {
+    list-style-type: none;
+    
+}
+a {
+    padding-left: 20px;
+}
+a:link {
+    text-decoration: none;
+    color: white;
+}
+a:visited {
+    text-decoration: none;
+    color: white;    
+}
 .intro img {
     width: auto;
     height: 400px;
@@ -27,45 +60,75 @@ header,
     height: auto;
 }
 
-header {
-    justify-content: space-between;
-}
+
 
 .intro,
 header,
 footer {
-    background-color: #E68D3C;
+    background-color: #2A2299;
 }
 
 .quote {
-    width: 100vw;
-    background-color: #289931;
+    width: 80vw;
+    padding: 40px 10vw;
+    font-size: 36px;
+    background-color: #cbe5ff;
 }
 
-.links  {
-    list-style-type: none;
-}
 
 .intro {
-    justify-content: center;
+    padding: 40px 10vw;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    min-height: 600px;
     gap: 50px;
+    color: white;
 }
 .intro-content {
     width: 600px;
 }
 h1 {
-    font-size: 3rem;
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
 }
 h2 {
+    padding: 40px;
     text-align: center;
-    font-size: 2rem;
+    font-weight: bold;
+    font-size: 36px;
+}
+.info {
+    padding: 0px 10vw;
+    padding-bottom: 40px;
 }
 .info-container {
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
-    gap: 150px;
+    column-gap: 150px;
+    row-gap: 40px;
     text-align: center;
+}
+
+blockquote {
+    max-width: 80vw;
+    font-style: italic;
+}
+figcaption {
+    text-align: right;
+}
+
+footer  {
+    text-align: center;
+}
+.action-container {
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0px;
+    width: 80vw;
+    background-color:#2B8F1A;
+}
+.action-text-container {
+    color: white;
+
 }
